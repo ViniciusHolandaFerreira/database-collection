@@ -99,3 +99,12 @@ CREATE TABLE Ingresso (
         FOREIGN KEY (i_id_sessao) 
         REFERENCES Sessao(i_id_sessao)
 );
+
+CREATE TABLE BC_valor_ingresso(
+	i_id_BC_valor_ingresso  INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+	i_id_ingresso INT NOT NULL,
+	f_valorAntigo_BC_valor_ingresso DECIMAL(9,2) NOT NULL, 
+	f_valorNovo_BC_valor_ingresso DECIMAL(9,2) NOT NULL,
+	d_dataAlteracao_BC_valor_ingresso TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+
+);

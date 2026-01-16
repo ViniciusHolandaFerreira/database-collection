@@ -1,3 +1,4 @@
+
 CREATE TABLE netflix(
 	v_id_netflix VARCHAR(7),
 	v_tipo_netflix VARCHAR(10),

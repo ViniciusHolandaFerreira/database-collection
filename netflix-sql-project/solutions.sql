@@ -36,7 +36,7 @@ FROM netflix
 	WHERE v_anoLanc_netflix = 2020
 
 -- (4) Top Países: Encontre os 5 países com a maior quantidade de conteúdo na Netflix. 
-	-- função UNNSET, strirng_to_string e TRIM
+
 SELECT
 	TRIM(UNNEST(string_to_array(v_pais_netflix, ','))) AS pais,
 	COUNT(v_id_netflix) AS total_conteudo

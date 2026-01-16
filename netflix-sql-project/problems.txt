@@ -1,0 +1,16 @@
+
+(1)Conte o número de Filmes (Movies) vs Shows de TV (TV Shows).
+(2)Encontre a classificação (rating) mais comum para filmes e programas de TV.
+(3)Liste todos os filmes lançados em um ano específico (ex: 2020).
+(4)Encontre os 5 países com a maior quantidade de conteúdo na Netflix.
+(5)Identifique o filme de maior duração (o mais longo).
+(6)Encontre todo o conteúdo que foi adicionado nos últimos 5 anos.
+(7)Encontre todos os filmes/programas de TV dirigidos apenas por 'Rajiv Chilaka'.
+(8)Liste todos os programas de TV (TV Shows) que possuem mais de 5 temporadas.
+(9)Conte o número de itens de conteúdo em cada gênero.
+(10)Encontre o ano de lançamento e o número médio de conteúdo lançado na Índia em um determinado ano. Retorne o top 5 anos com a maior média de lançamentos.
+(11)Liste todos os filmes que são classificados como 'Documentaries'.
+(12)Encontre todo o conteúdo que não possui um diretor listado.
+(13)Encontre em quantos filmes o ator 'Salman Khan' apareceu nos últimos 10 anos.
+(14)Encontre os 10 principais atores que apareceram no maior número de filmes produzidos na Índia.
+(15)Categorize o conteúdo com base na presença das palavras-chave 'kill' ou 'violence' no campo de descrição. Rotule como 'Bad Content' se contiver essas palavras e 'Good Content' caso contrário. Conte o total por categoria.

@@ -6,12 +6,6 @@
 ## Visão Geral
 Este projeto envolve uma análise exploratória de dados do catálogo da Netflix utilizando **PostgreSQL**. O objetivo é extrair insights sobre tipos de conteúdo, distribuições geográficas, tendências temporais e classificações, respondendo a 15 perguntas estratégicas de negócio (DQL).
 
-## Objetivos
-- Analisar a proporção entre filmes e séries.
-- Identificar os principais países produtores de conteúdo.
-- Investigar padrões de lançamento e durações de filmes.
-- Categorizar conteúdos com base em descrições e elencos.
-
 ## Dataset
 Os dados utilizados neste projeto foram extraídos do Kaggle (https://www.kaggle.com/datasets/shivamb/netflix-shows?resource=download). O dataset contém informações sobre:
 - **v_id_netflix**: ID único do título.
@@ -58,6 +52,3 @@ Os dados utilizados neste projeto foram extraídos do Kaggle (https://www.kaggle
 2. Importe o arquivo CSV para sua instância do PostgreSQL.
 3. Execute o script `schema.sql` para criar a estrutura das tabelas.
 4. Execute o script `solutions.sql` para visualizar as análises.
-
-## Conclusão
-Este projeto demonstra habilidades sólidas em SQL, desde a limpeza de dados até a geração de relatórios complexos. A análise revelou padrões interessantes, como a dominância de certos atores no mercado indiano e a evolução do catálogo internacional da Netflix ao longo dos anos.

@@ -151,4 +151,47 @@ SELECT
     p.last_name
 FROM patients p
 	INNER JOIN admissions ad ON p.patient_id = ad.patient_id
-    WHERE ad.diagnosis = 'Dementia'
+    WHERE ad.diagnosis = 'Dementia'  
+
+-- (21) Display every patient's first_name. Order the list by the length of each name and then by alphabetically.  
+
+SELECT
+	first_name
+FROM patients
+	order by LENGTH(first_name), first_name  ASC  
+
+-- (22) Show the total amount of male patients and the total amount of female patients in the patients table. Display the two results in the same row. 
+
+SELECT
+ 		 (SELECT COUNT(*) FROM patients WHERE gender = 'M') AS m,
+ 		 (SELECT COUNT(*) FROM patients WHERE gender = 'F') AS f
+
+-- (23) Show first and last name, allergies from patients which have allergies to either 'Penicillin' or 'Morphine'. Show results ordered ascending by allergies then by first_name then by last_name.	
+
+SELECT
+	first_name,
+    last_name,
+    allergies
+FROM patients
+	WHERE allergies = 'Penicillin'
+    or allergies = 'Morphine'
+    ORDER BY allergies, first_name, last_name ASC
+
+-- (24) Show patient_id, diagnosis from admissions. Find patients admitted multiple times for the same diagnosis. 
+
+SELECT
+	p.patient_id,
+    a.diagnosis
+FROM patients p
+	INNER JOIN admissions a ON p.patient_id = a.patient_id
+	group by p.patient_id, a.diagnosis
+    HAVING count(p.patient_id) > 1 AND COUNT(a.diagnosis) > 1 
+
+-- (25) Show the city and the total number of patients in the city. Order from most to least patients and then by city name ascending.  
+
+SELECT
+	city,
+	COUNT(patient_id)
+FROM patients 
+	GROUP BY city
+    ORDER BY COUNT(patient_id) DESC, city ASC
